@@ -1,0 +1,1000 @@
+CREATE TABLE IF NOT EXISTS employes (
+id_abonne int(3) NOT NULL AUTO_INCREMENT,
+prenom varchar(20) DEFAULT NULL,
+nom varchar(20) DEFAULT NULL,
+sex enum('M', 'F')NOT NULL,
+PRIMARY KEY(id_abonne)
+);
+
+CREATE TABLE IF NOT EXISTS employes (
+id_employes int(3) NOT NULL AUTO_INCREMENT,
+prenom varchar(20) DEFAULT NULL,
+nom varchar(20) DEFAULT NULL,
+sex enum('M', 'F') NOT NULL,
+service varchar(30) DEFAULT NULL,
+date_embauche date DEFAULT NULL,
+salaire float DEFAULT NULL,
+PRIMARY KEY(id_employes)
+);
+Microsoft Windows [version 10.0.19042.1586]
+(c) Microsoft Corporation. Tous droits réservés.
+
+C:\Users\EDW>ls
+'ls' n’est pas reconnu en tant que commande interne
+ou externe, un programme exécutable ou un fichier de commandes.
+
+C:\Users\EDW>dir
+ Le volume dans le lecteur C s’appelle Windows
+ Le numéro de série du volume est EADE-80E8
+
+ Répertoire de C:\Users\EDW
+
+02/08/2022  16:21    <DIR>          .
+02/08/2022  16:21    <DIR>          ..
+13/06/2022  14:16             5 056 .bash_history
+09/06/2022  11:22    <DIR>          .cache
+30/05/2022  09:48               188 .gitconfig
+02/08/2022  16:21                20 .lesshst
+01/08/2022  14:58                25 .node_repl_history
+10/05/2022  12:58               916 .viminfo
+09/05/2022  14:58    <DIR>          .vscode
+21/04/2022  09:10    <DIR>          3D Objects
+21/04/2022  09:10    <DIR>          Contacts
+03/08/2022  09:15    <DIR>          Desktop
+13/05/2022  10:14    <DIR>          Documents
+02/08/2022  15:50    <DIR>          Downloads
+21/04/2022  09:10    <DIR>          Favorites
+21/04/2022  09:10    <DIR>          Links
+21/04/2022  09:10    <DIR>          Music
+21/04/2022  09:26    <DIR>          OneDrive
+29/07/2022  09:19    <DIR>          Pictures
+19/07/2022  14:28    <DIR>          Postman
+21/04/2022  09:10    <DIR>          Saved Games
+21/04/2022  09:26    <DIR>          Searches
+02/08/2022  14:59    <DIR>          testGit-Github
+28/04/2022  08:55    <DIR>          Videos
+               5 fichier(s)            6 205 octets
+              19 Rép(s)  168 538 963 968 octets libres
+
+C:\Users\EDW>cd ..
+
+C:\Users>dir
+ Le volume dans le lecteur C s’appelle Windows
+ Le numéro de série du volume est EADE-80E8
+
+ Répertoire de C:\Users
+
+11/05/2022  09:54    <DIR>          .
+11/05/2022  09:54    <DIR>          ..
+10/09/2021  15:01    <DIR>          Apprenant
+02/08/2022  16:21    <DIR>          EDW
+28/07/2022  10:19    <DIR>          lepoles_admin
+10/09/2021  14:58    <DIR>          Public
+               0 fichier(s)                0 octets
+               6 Rép(s)  168 538 832 896 octets libres
+
+C:\Users>cd ..
+
+C:\>cd xampp
+
+C:\xampp>dir
+ Le volume dans le lecteur C s’appelle Windows
+ Le numéro de série du volume est EADE-80E8
+
+ Répertoire de C:\xampp
+
+03/08/2022  09:14    <DIR>          .
+03/08/2022  09:14    <DIR>          ..
+11/05/2022  09:56    <DIR>          anonymous
+11/05/2022  09:56    <DIR>          apache
+07/06/2013  13:15               436 apache_start.bat
+11/05/2022  09:58               176 apache_stop.bat
+05/04/2021  18:16            10 324 catalina_service.bat
+05/04/2021  18:17             3 766 catalina_start.bat
+05/04/2021  18:17             3 529 catalina_stop.bat
+11/05/2022  09:58    <DIR>          cgi-bin
+11/05/2022  09:56    <DIR>          contrib
+11/05/2022  09:56             2 731 ctlscript.bat
+20/05/2022  12:05    <DIR>          FileZillaFTP
+30/03/2013  14:29                78 filezilla_setup.bat
+07/06/2013  13:15               150 filezilla_start.bat
+07/06/2013  13:15               149 filezilla_stop.bat
+03/08/2022  09:15    <DIR>          htdocs
+11/05/2022  09:56    <DIR>          img
+11/05/2022  09:58    <DIR>          install
+27/08/2019  16:01               299 killprocess.bat
+11/05/2022  09:56    <DIR>          licenses
+11/05/2022  09:56    <DIR>          locale
+11/05/2022  09:56    <DIR>          mailoutput
+11/05/2022  09:56    <DIR>          mailtodisk
+07/06/2013  13:15               136 mercury_start.bat
+07/06/2013  13:15                60 mercury_stop.bat
+11/05/2022  09:56    <DIR>          mysql
+03/06/2019  13:39               471 mysql_start.bat
+11/05/2022  09:58               256 mysql_stop.bat
+13/03/2017  13:04               824 passwords.txt
+11/05/2022  09:58    <DIR>          php
+21/07/2022  10:07    <DIR>          phpMyAdmin
+11/05/2022  09:57               791 properties.ini
+20/04/2022  12:23             7 496 readme_de.txt
+20/04/2022  12:23             7 366 readme_en.txt
+30/03/2013  14:29            60 928 service.exe
+30/03/2013  14:29             1 255 setup_xampp.bat
+03/08/2022  09:16    <DIR>          sql
+11/05/2022  09:56    <DIR>          src
+29/11/2020  15:38             1 671 test_php.bat
+01/08/2022  14:18    <DIR>          tmp
+11/05/2022  09:58           168 963 uninstall.dat
+11/05/2022  09:58        12 519 098 uninstall.exe
+11/05/2022  09:56    <DIR>          webdav
+06/04/2021  13:38         3 368 448 xampp-control.exe
+11/05/2022  09:58               178 xampp-control.ini
+22/07/2022  16:56             1 499 xampp-control.log
+11/05/2022  09:56             1 084 xampp_shell.bat
+30/03/2013  14:29           118 784 xampp_start.exe
+30/03/2013  14:29           118 784 xampp_stop.exe
+              29 fichier(s)       16 399 730 octets
+              21 Rép(s)  168 538 296 320 octets libres
+
+C:\xampp>cd htdocs
+
+C:\xampp\htdocs>cd ..
+
+C:\xampp>cd sql
+
+C:\xampp\sql>cd ..
+
+C:\xampp>cd mysql
+
+C:\xampp\mysql>dir
+ Le volume dans le lecteur C s’appelle Windows
+ Le numéro de série du volume est EADE-80E8
+
+ Répertoire de C:\xampp\mysql
+
+11/05/2022  09:56    <DIR>          .
+11/05/2022  09:56    <DIR>          ..
+11/05/2022  09:56    <DIR>          backup
+11/05/2022  09:58    <DIR>          bin
+10/02/2022  21:42            17 987 COPYING
+10/02/2022  21:42             2 093 CREDITS
+01/08/2022  09:41    <DIR>          data
+30/03/2013  14:29               848 mysql_installservice.bat
+30/03/2013  14:29               395 mysql_uninstallservice.bat
+10/02/2022  21:42             2 874 README.md
+03/06/2019  13:39             1 095 resetroot.bat
+11/05/2022  09:56    <DIR>          scripts
+11/05/2022  09:56    <DIR>          share
+10/02/2022  21:42            86 263 THIRDPARTY
+               7 fichier(s)          111 555 octets
+               7 Rép(s)  168 538 095 616 octets libres
+
+C:\xampp\mysql>cd bin
+
+C:\xampp\mysql\bin>mysql -u root --
+ERROR 2002 (HY000): Can't connect to MySQL server on 'localhost' (10061)
+
+C:\xampp\mysql\bin>-- MariaDB [(none)] CREATE DATABASE entreprise;
+'--' n’est pas reconnu en tant que commande interne
+ou externe, un programme exécutable ou un fichier de commandes.
+
+C:\xampp\mysql\bin>mysql -u root --
+Welcome to the MariaDB monitor.  Commands end with ; or \g.
+Your MariaDB connection id is 8
+Server version: 10.4.24-MariaDB mariadb.org binary distribution
+
+Copyright (c) 2000, 2018, Oracle, MariaDB Corporation Ab and others.
+
+Type 'help;' or '\h' for help. Type '\c' to clear the current input statement.
+
+MariaDB [(none)]> SHOW databases;
++--------------------+
+| Database           |
++--------------------+
+| fourniture         |
+| information_schema |
+| mysql              |
+| nacime             |
+| performance_schema |
+| phpmyadmin         |
+| portfolio          |
+| sitewordpress      |
+| sitewordpress2     |
+| test               |
++--------------------+
+10 rows in set (0.030 sec)
+
+MariaDB [(none)]> CREATE DATABASE IF NOT EXISTS poles;
+Query OK, 1 row affected (0.001 sec)
+
+MariaDB [(none)]> USE poles;
+Database changed
+MariaDB [poles]> create table employes;
+ERROR 1113 (42000): A table must have at least 1 column
+MariaDB [poles]> create table employes(
+    -> id int(3) primary key not null,
+    -> nom varchar(30),
+    -> prenom varchar (255),
+    -> email varchar(255),
+    -> date_naissance DATE,
+    -> ville varchar(255),
+    -> pays varchar(255),
+    -> code_postal varchar(5),
+    -> note INT(2),
+    -> );
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ')' at line 11
+MariaDB [poles]> create table employes(
+    ->     -> id int(3) primary key not null,
+    ->     -> nom varchar(30),
+    ->     -> prenom varchar (255),
+    ->     -> email varchar(255),
+    ->     -> date_naissance DATE,
+    ->     -> ville varchar(255),
+    ->     -> pays varchar(255),
+    ->     -> code_postal varchar(5),
+    ->     -> note INT(2),
+    ->
+    ->
+    -> ;
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '-> id int(3) primary key not null,
+    -> nom varchar(30),
+    -> prenom varc...' at line 2
+MariaDB [poles]> create table employes(
+    ->     -> id int(3) primary key not null,
+    ->     -> nom varchar(30),
+    ->     -> prenom varchar (255),
+    ->     -> email varchar(255),
+    ->     -> date_naissance DATE,
+    ->     -> ville varchar(255),
+    ->     -> pays varchar(255),
+    ->     -> code_postal varchar(5),
+    ->     -> note INT(2)
+    -> );
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '-> id int(3) primary key not null,
+    -> nom varchar(30),
+    -> prenom varc...' at line 2
+MariaDB [poles]> SHOW TABLES;
+Empty set (0.001 sec)
+
+MariaDB [poles]> create table employes(
+    -> id int(3) primary key not null,
+    -> nom varchar(30),
+    -> prenom varchar (255),
+    -> email varchar(255),
+    -> date_naissance DATE,
+    -> ville varchar(255),
+    -> pays varchar(255),
+    -> code_postal varchar(5),
+    -> note INT(2)
+    -> );
+Query OK, 0 rows affected (0.023 sec)
+
+MariaDB [poles]> show tables;
++-----------------+
+| Tables_in_poles |
++-----------------+
+| employes        |
++-----------------+
+1 row in set (0.001 sec)
+
+MariaDB [poles]> INSERT INTO employes;
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 1
+MariaDB [poles]> show tables;
++-----------------+
+| Tables_in_poles |
++-----------------+
+| employes        |
++-----------------+
+1 row in set (0.001 sec)
+
+MariaDB [poles]> insert into employes values(0254584, giraud, pierre, pierregiraud@gmail.com, 05/05/1975, paris, france,75012, il fait beau);
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '@gmail.com, 05/05/1975, paris, france,75012, il fait beau)' at line 1
+MariaDB [poles]> insert into employes (id, nom, prenom, email, date_naissance, ville, pays, code_postal, note)
+    -> VALUES(1, 'BOUBEKEUR', 'Nacime', 'nacime@gmail.com', '23/10/1999', 'Poissy', 'France', '78300', 18),
+    -> (2, 'KONE', 'Nouh', 'kone@gmail.com', '19/06/2002', 'Mantes-la-jolie', 'France', '78200', 14),
+    -> (3, 'MOUNAH', 'Yacine', 'yacine@gmail.com', '17/07/1999', 'Poissy', 'France', '78300', 11);
+Query OK, 3 rows affected, 3 warnings (0.003 sec)
+Records: 3  Duplicates: 0  Warnings: 3
+
+MariaDB [poles]> show tables
+    -> ;
++-----------------+
+| Tables_in_poles |
++-----------------+
+| employes        |
++-----------------+
+1 row in set (0.001 sec)
+
+MariaDB [poles]> show employes;
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'employes' at line 1
+MariaDB [poles]> insert into employes (id, nom, prenom, email, date_naissance, ville, pays, code_postal, note)
+    -> VALUES(4, 'LE FEVRE', 'Tom', 'tom@gmail.com', '06/01/1994', 'Poissy', 'France', '78300', 12),
+    -> VALUES(5, 'HYVERNAT', 'Hafsa', 'hafsa@gmail.com', '08/04/2002', 'Les Mureaux', 'France', '78130', 15),
+    -> VALUES(6, 'MENDY', 'Kevin', 'kevin@gmail.com', '03/02/1991', 'Poissy', 'France', '78300', 8),
+    -> VALUES(7, 'MENDY', 'Kevin', 'kevin@gmail.com', '03/02/1991', 'Poissy', 'France', '78300', 8),
+    -> VALUES(7, 'GIMBERT', 'Dominique', 'dominique@gmail.com', '16/01/1962', 'St Germain En Laye', 'France', '78100', 5),
+    -> VALUES(8, 'DANCIU', 'Delia', 'delia@gmail.com', '01/02/1994', 'Poissy', 'France', '78300', 12),
+    -> VALUES(9, 'AWEL', 'Yadaf', 'yadaf@gmail.com', '04/05/1998', 'Paris', 'France', '75000', 9),
+    -> VALUES(10, 'HAVRET', 'Henri', 'henri@gmail.com', 1999-10-07, 'Versailles', 'France', '78000', 10),
+    -> VALUES(11, 'OURAHOU', 'Shaymae', 'shaymae@gmail.com', 1999-10-07, 'Les Mureaux', 'France', '78130', 11);
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'VALUES(5, 'HYVERNAT', 'Hafsa', 'hafsa@gmail.com', '08/04/2002', 'Les Mureaux'...' at line 3
+MariaDB [poles]> VALUES(1, 'BOUBEKEUR', 'Nacime', 'nacime@gmail.fr', '23-10-1999', 'Poissy', 'France', '78300', 18),
+    -> (2,'KONE', 'Nouh', 'kone@gmail.fr', '19-06-2002','Mantes-la-jolie', 'France', '78200', 14),
+    -> (3,'MOUNA', 'Yacin', 'yacin@gmail.fr', '17-07-1999','Poissy', 'France', '78300', 11),
+    -> (4,'LE FEVRE', 'Tom', 'tom@gmail.com', '06-01-1999','Mantes-la-jolie', 'France', '78300', 12),
+    -> (5,'HYVERNAT', 'Hafsa', 'hafsa@gmail.com', '08-04-2002','Les Mureaux', 'France', '78130', 15),
+    -> (6,'MENDY', 'Kevin', 'kevin@gmail.com', '03-02-1991','Poissy', 'France', '78300', 8),
+    -> (7,'GIMBERT', 'Dominique', 'dominique@gmail.com', '16-01-1962','Saint Germain En Laye', 'France', '78100', 5),
+    -> (8,'DANCIU', 'Delia', 'delia@gmail.com', '01-02-1994','Poissy', 'France', '78300', 12),
+    -> (9, 'AWEL', 'Yadaf', 'yadafi@gmail.com', '04-05-1998',Paris', 'France', '78300',9),
+    '> (10, 'HARVET', 'Henri', 'Henri@gmail.com', '07-10-1991',Versailles', 'France', '78000', 10),
+    -> (11, 'OURAHOU', 'Shaymae', 'shaymae@gmail.com', '09-01-2002',Poissy', 'Les Mureaux', '78130', 11);
+    '>
+    '> ;
+    '> ByeCtrl-C -- exit!
+
+
+C:\xampp\mysql\bin>VALUES(1, 'BOUBEKEUR', 'Nacime', 'nacime@gmail.fr', '23-10-1999', 'Poissy', 'France', '78300', 18),
+'VALUES' n’est pas reconnu en tant que commande interne
+ou externe, un programme exécutable ou un fichier de commandes.
+
+C:\xampp\mysql\bin>(2,'KONE', 'Nouh', 'kone@gmail.fr', '19-06-2002','Mantes-la-jolie', 'France', '78200', 14),
+'2' n’est pas reconnu en tant que commande interne
+ou externe, un programme exécutable ou un fichier de commandes.
+
+C:\xampp\mysql\bin>(3,'MOUNA', 'Yacin', 'yacin@gmail.fr', '17-07-1999','Poissy', 'France', '78300', 11),
+'3' n’est pas reconnu en tant que commande interne
+ou externe, un programme exécutable ou un fichier de commandes.
+
+C:\xampp\mysql\bin>(4,'LE FEVRE', 'Tom', 'tom@gmail.com', '06-01-1999','Mantes-la-jolie', 'France', '78300', 12),
+'4' n’est pas reconnu en tant que commande interne
+ou externe, un programme exécutable ou un fichier de commandes.
+
+C:\xampp\mysql\bin>(5,'HYVERNAT', 'Hafsa', 'hafsa@gmail.com', '08-04-2002','Les Mureaux', 'France', '78130', 15),
+'5' n’est pas reconnu en tant que commande interne
+ou externe, un programme exécutable ou un fichier de commandes.
+
+C:\xampp\mysql\bin>(6,'MENDY', 'Kevin', 'kevin@gmail.com', '03-02-1991','Poissy', 'France', '78300', 8),
+'6' n’est pas reconnu en tant que commande interne
+ou externe, un programme exécutable ou un fichier de commandes.
+
+C:\xampp\mysql\bin>(7,'GIMBERT', 'Dominique', 'dominique@gmail.com', '16-01-1962','Saint Germain En Laye', 'France', '78100', 5),
+'7' n’est pas reconnu en tant que commande interne
+ou externe, un programme exécutable ou un fichier de commandes.
+
+C:\xampp\mysql\bin>(8,'DANCIU', 'Delia', 'delia@gmail.com', '01-02-1994','Poissy', 'France', '78300', 12),
+'8' n’est pas reconnu en tant que commande interne
+ou externe, un programme exécutable ou un fichier de commandes.
+
+C:\xampp\mysql\bin>(9, 'AWEL', 'Yadaf', 'yadafi@gmail.com', '04-05-1998',Paris', 'France', '78300',9),
+'9' n’est pas reconnu en tant que commande interne
+ou externe, un programme exécutable ou un fichier de commandes.
+
+C:\xampp\mysql\bin>(10, 'HARVET', 'Henri', 'Henri@gmail.com', '07-10-1991',Versailles', 'France', '78000', 10),
+'10' n’est pas reconnu en tant que commande interne
+ou externe, un programme exécutable ou un fichier de commandes.
+
+C:\xampp\mysql\bin>(11, 'OURAHOU', 'Shaymae', 'shaymae@gmail.com', '09-01-2002',Poissy', 'Les Mureaux', '78130', 11);
+'11' n’est pas reconnu en tant que commande interne
+ou externe, un programme exécutable ou un fichier de commandes.
+
+C:\xampp\mysql\bin>VALUES(1, 'BOUBEKEUR', 'Nacime', 'nacime@gmail.fr', '23-10-1999', 'Poissy', 'France', '78300', 18),
+'VALUES' n’est pas reconnu en tant que commande interne
+ou externe, un programme exécutable ou un fichier de commandes.
+
+C:\xampp\mysql\bin>(2,'KONE', 'Nouh', 'kone@gmail.fr', '19-06-2002','Mantes-la-jolie', 'France', '78200', 14),
+'2' n’est pas reconnu en tant que commande interne
+ou externe, un programme exécutable ou un fichier de commandes.
+
+C:\xampp\mysql\bin>(3,'MOUNA', 'Yacin', 'yacin@gmail.fr', '17-07-1999','Poissy', 'France', '78300', 11),
+'3' n’est pas reconnu en tant que commande interne
+ou externe, un programme exécutable ou un fichier de commandes.
+
+C:\xampp\mysql\bin>(4,'LE FEVRE', 'Tom', 'tom@gmail.com', '06-01-1999','Mantes-la-jolie', 'France', '78300', 12),
+'4' n’est pas reconnu en tant que commande interne
+ou externe, un programme exécutable ou un fichier de commandes.
+
+C:\xampp\mysql\bin>(5,'HYVERNAT', 'Hafsa', 'hafsa@gmail.com', '08-04-2002','Les Mureaux', 'France', '78130', 15),
+'5' n’est pas reconnu en tant que commande interne
+ou externe, un programme exécutable ou un fichier de commandes.
+
+C:\xampp\mysql\bin>(6,'MENDY', 'Kevin', 'kevin@gmail.com', '03-02-1991','Poissy', 'France', '78300', 8),
+'6' n’est pas reconnu en tant que commande interne
+ou externe, un programme exécutable ou un fichier de commandes.
+
+C:\xampp\mysql\bin>(7,'GIMBERT', 'Dominique', 'dominique@gmail.com', '16-01-1962','Saint Germain En Laye', 'France', '78100', 5),
+'7' n’est pas reconnu en tant que commande interne
+ou externe, un programme exécutable ou un fichier de commandes.
+
+C:\xampp\mysql\bin>(8,'DANCIU', 'Delia', 'delia@gmail.com', '01-02-1994','Poissy', 'France', '78300', 12),
+'8' n’est pas reconnu en tant que commande interne
+ou externe, un programme exécutable ou un fichier de commandes.
+
+C:\xampp\mysql\bin>(9, 'AWEL', 'Yadaf', 'yadafi@gmail.com', '04-05-1998',Paris', 'France', '78300',9),
+'9' n’est pas reconnu en tant que commande interne
+ou externe, un programme exécutable ou un fichier de commandes.
+
+C:\xampp\mysql\bin>(10, 'HARVET', 'Henri', 'Henri@gmail.com', '07-10-1991',Versailles', 'France', '78000', 10),
+'10' n’est pas reconnu en tant que commande interne
+ou externe, un programme exécutable ou un fichier de commandes.
+
+C:\xampp\mysql\bin>(11, 'OURAHOU', 'Shaymae', 'shaymae@gmail.com', '09-01-2002',Poissy', 'Les Mureaux', '78130', 11);
+'11' n’est pas reconnu en tant que commande interne
+ou externe, un programme exécutable ou un fichier de commandes.
+
+C:\xampp\mysql\bin>VALUES(1, 'BOUBEKEUR', 'Nacime', 'nacime@gmail.fr', '23-10-1999', 'Poissy', 'France', '78300', 18),
+'VALUES' n’est pas reconnu en tant que commande interne
+ou externe, un programme exécutable ou un fichier de commandes.
+
+C:\xampp\mysql\bin>(2,'KONE', 'Nouh', 'kone@gmail.fr', '19-06-2002','Mantes-la-jolie', 'France', '78200', 14),
+'2' n’est pas reconnu en tant que commande interne
+ou externe, un programme exécutable ou un fichier de commandes.
+
+C:\xampp\mysql\bin>(3,'MOUNA', 'Yacin', 'yacin@gmail.fr', '17-07-1999','Poissy', 'France', '78300', 11),
+'3' n’est pas reconnu en tant que commande interne
+ou externe, un programme exécutable ou un fichier de commandes.
+
+C:\xampp\mysql\bin>(4,'LE FEVRE', 'Tom', 'tom@gmail.com', '06-01-1999','Mantes-la-jolie', 'France', '78300', 12),
+'4' n’est pas reconnu en tant que commande interne
+ou externe, un programme exécutable ou un fichier de commandes.
+
+C:\xampp\mysql\bin>(5,'HYVERNAT', 'Hafsa', 'hafsa@gmail.com', '08-04-2002','Les Mureaux', 'France', '78130', 15),
+'5' n’est pas reconnu en tant que commande interne
+ou externe, un programme exécutable ou un fichier de commandes.
+
+C:\xampp\mysql\bin>(6,'MENDY', 'Kevin', 'kevin@gmail.com', '03-02-1991','Poissy', 'France', '78300', 8),
+'6' n’est pas reconnu en tant que commande interne
+ou externe, un programme exécutable ou un fichier de commandes.
+
+C:\xampp\mysql\bin>(7,'GIMBERT', 'Dominique', 'dominique@gmail.com', '16-01-1962','Saint Germain En Laye', 'France', '78100', 5),
+'7' n’est pas reconnu en tant que commande interne
+ou externe, un programme exécutable ou un fichier de commandes.
+
+C:\xampp\mysql\bin>(8,'DANCIU', 'Delia', 'delia@gmail.com', '01-02-1994','Poissy', 'France', '78300', 12),
+'8' n’est pas reconnu en tant que commande interne
+ou externe, un programme exécutable ou un fichier de commandes.
+
+C:\xampp\mysql\bin>(9, 'AWEL', 'Yadaf', 'yadafi@gmail.com', '04-05-1998',Paris', 'France', '78300',9),
+'9' n’est pas reconnu en tant que commande interne
+ou externe, un programme exécutable ou un fichier de commandes.
+
+C:\xampp\mysql\bin>(10, 'HARVET', 'Henri', 'Henri@gmail.com', '07-10-1991',Versailles', 'France', '78000', 10),
+'10' n’est pas reconnu en tant que commande interne
+ou externe, un programme exécutable ou un fichier de commandes.
+
+C:\xampp\mysql\bin>(11, 'OURAHOU', 'Shaymae', 'shaymae@gmail.com', '09-01-2002',Poissy', 'Les Mureaux', '78130', 11);
+'11' n’est pas reconnu en tant que commande interne
+ou externe, un programme exécutable ou un fichier de commandes.
+
+C:\xampp\mysql\bin>
+C:\xampp\mysql\bin>
+C:\xampp\mysql\bin>VALUES(1, 'BOUBEKEUR', 'Nacime', 'nacime@gmail.fr', '23-10-1999', 'Poissy', 'France', '78300', 18),
+'VALUES' n’est pas reconnu en tant que commande interne
+ou externe, un programme exécutable ou un fichier de commandes.
+
+C:\xampp\mysql\bin>(2,'KONE', 'Nouh', 'kone@gmail.fr', '19-06-2002','Mantes-la-jolie', 'France', '78200', 14),
+'2' n’est pas reconnu en tant que commande interne
+ou externe, un programme exécutable ou un fichier de commandes.
+
+C:\xampp\mysql\bin>(3,'MOUNA', 'Yacin', 'yacin@gmail.fr', '17-07-1999','Poissy', 'France', '78300', 11),
+'3' n’est pas reconnu en tant que commande interne
+ou externe, un programme exécutable ou un fichier de commandes.
+
+C:\xampp\mysql\bin>(4,'LE FEVRE', 'Tom', 'tom@gmail.com', '06-01-1999','Mantes-la-jolie', 'France', '78300', 12),
+'4' n’est pas reconnu en tant que commande interne
+ou externe, un programme exécutable ou un fichier de commandes.
+
+C:\xampp\mysql\bin>(5,'HYVERNAT', 'Hafsa', 'hafsa@gmail.com', '08-04-2002','Les Mureaux', 'France', '78130', 15),
+'5' n’est pas reconnu en tant que commande interne
+ou externe, un programme exécutable ou un fichier de commandes.
+
+C:\xampp\mysql\bin>(6,'MENDY', 'Kevin', 'kevin@gmail.com', '03-02-1991','Poissy', 'France', '78300', 8),
+'6' n’est pas reconnu en tant que commande interne
+ou externe, un programme exécutable ou un fichier de commandes.
+
+C:\xampp\mysql\bin>(7,'GIMBERT', 'Dominique', 'dominique@gmail.com', '16-01-1962','Saint Germain En Laye', 'France', '78100', 5),
+'7' n’est pas reconnu en tant que commande interne
+ou externe, un programme exécutable ou un fichier de commandes.
+
+C:\xampp\mysql\bin>(8,'DANCIU', 'Delia', 'delia@gmail.com', '01-02-1994','Poissy', 'France', '78300', 12),
+'8' n’est pas reconnu en tant que commande interne
+ou externe, un programme exécutable ou un fichier de commandes.
+
+C:\xampp\mysql\bin>(9, 'AWEL', 'Yadaf', 'yadafi@gmail.com', '04-05-1998',Paris', 'France', '78300',9),
+'9' n’est pas reconnu en tant que commande interne
+ou externe, un programme exécutable ou un fichier de commandes.
+
+C:\xampp\mysql\bin>(10, 'HARVET', 'Henri', 'Henri@gmail.com', '07-10-1991',Versailles', 'France', '78000', 10),
+'10' n’est pas reconnu en tant que commande interne
+ou externe, un programme exécutable ou un fichier de commandes.
+
+C:\xampp\mysql\bin>(11, 'OURAHOU', 'Shaymae', 'shaymae@gmail.com', '09-01-2002',Poissy', 'Les Mureaux', '78130', 11);
+'11' n’est pas reconnu en tant que commande interne
+ou externe, un programme exécutable ou un fichier de commandes.
+
+C:\xampp\mysql\bin>insert into employes (id, nom, prenom, email, date_naissance, ville, pays, code_postal, note)
+'insert' n’est pas reconnu en tant que commande interne
+ou externe, un programme exécutable ou un fichier de commandes.
+
+C:\xampp\mysql\bin>mysql -u root --
+Welcome to the MariaDB monitor.  Commands end with ; or \g.
+Your MariaDB connection id is 67
+Server version: 10.4.24-MariaDB mariadb.org binary distribution
+
+Copyright (c) 2000, 2018, Oracle, MariaDB Corporation Ab and others.
+
+Type 'help;' or '\h' for help. Type '\c' to clear the current input statement.
+
+MariaDB [(none)]> insert into employes (id, nom, prenom, email, date_naissance, ville, pays, code_postal, note)
+    -> VALUES(1, 'BOUBEKEUR', 'Nacime', 'nacime@gmail.fr', '23-10-1999', 'Poissy', 'France', '78300', 18),
+    -> (2,'KONE', 'Nouh', 'kone@gmail.fr', '19-06-2002','Mantes-la-jolie', 'France', '78200', 14),
+    -> (3,'MOUNA', 'Yacin', 'yacin@gmail.fr', '17-07-1999','Poissy', 'France', '78300', 11),
+    -> (4,'LE FEVRE', 'Tom', 'tom@gmail.com', '06-01-1999','Mantes-la-jolie', 'France', '78300', 12),
+    -> (5,'HYVERNAT', 'Hafsa', 'hafsa@gmail.com', '08-04-2002','Les Mureaux', 'France', '78130', 15),
+    -> (6,'MENDY', 'Kevin', 'kevin@gmail.com', '03-02-1991','Poissy', 'France', '78300', 8),
+    -> (7,'GIMBERT', 'Dominique', 'dominique@gmail.com', '16-01-1962','Saint Germain En Laye', 'France', '78100', 5),
+    -> (8,'DANCIU', 'Delia', 'delia@gmail.com', '01-02-1994','Poissy', 'France', '78300', 12),
+    -> (9, 'AWEL', 'Yadaf', 'yadafi@gmail.com', '04-05-1998',Paris', 'France', '78300',9),
+    '> (10, 'HARVET', 'Henri', 'Henri@gmail.com', '07-10-1991',Versailles', 'France', '78000', 10),
+    -> (11, 'OURAHOU', 'Shaymae', 'shaymae@gmail.com', '09-01-2002',Poissy', 'Les Mureaux', '78130', 11);
+    '> Ctrl-C -- exit!
+Bye
+
+C:\xampp\mysql\bin>mysql -u root --
+Welcome to the MariaDB monitor.  Commands end with ; or \g.
+Your MariaDB connection id is 68
+Server version: 10.4.24-MariaDB mariadb.org binary distribution
+
+Copyright (c) 2000, 2018, Oracle, MariaDB Corporation Ab and others.
+
+Type 'help;' or '\h' for help. Type '\c' to clear the current input statement.
+
+MariaDB [(none)]> INSERT INTO employes (id, nom, prenom, email, date_naissance, ville, pays, code_postal, note)
+    ->     VALUES(1,'BOUBEKEUR', 'Nacime', 'nacime@gmail.com', '23-10-1999', 'Poissy', 'France', '78300', 18),
+    ->     (2, 'KONE', 'Nouha', 'kone@gmail.com', '19-06-2002', 'Mantes-la-jolie', 'France', '78200', 14),
+    ->     (3, 'MOUNAH', 'Yacine', 'yacine@gmail.com', '17-07-1999', 'Poissy', 'France', '78300', 11),
+    ->     (4, 'LE FEVRE', 'Tom', 'tom@gmail.com', '06-01-1994', 'Poissy', 'France', '78300', 12),
+    ->     (5, 'HYVERNAT', 'Hafsa', 'hafsa@gmail.com', '08-04-2002', 'Les Mureaux', 'France', '78130', 15),
+    ->     (6, 'MENDY', 'Kevin', 'kevin@gmail.com', '03-02-1991', 'Poissy', 'France', '78300', 8),
+    ->     (7, 'GIMBERT', 'Dominique', 'dominique@gmail.com', '16-01-1962', 'Saint Germain En Laye', 'France', '78100', 5),
+    ->     (8, 'DANCIU', 'Delia', 'delia@gmail.com', '01-02-1994', 'Poissy', 'France', '78300', 12),
+    ->     (9, 'AWEL', 'Yadaf', 'yadaf@gmail.com', '04-05-1998', 'Paris', 'France', '78300', 9),
+    ->     (10, 'HAVRET', 'Henri', 'henri@gmail.com', '07-10-1991', 'Versailles', 'France', '78000', 10),
+    ->     (11, 'OURAHOU', 'Shaymae', 'shaymae@gmail.com', '09-01-2002', 'Les Mureaux', 'France', '78130', 11);
+ERROR 1046 (3D000): No database selected
+MariaDB [(none)]> use poles;
+Database changed
+MariaDB [poles]> INSERT INTO employes (id, nom, prenom, email, date_naissance, ville, pays, code_postal, note)
+    ->     VALUES(1,'BOUBEKEUR', 'Nacime', 'nacime@gmail.com', '23-10-1999', 'Poissy', 'France', '78300', 18),
+    ->     (2, 'KONE', 'Nouha', 'kone@gmail.com', '19-06-2002', 'Mantes-la-jolie', 'France', '78200', 14),
+    ->     (3, 'MOUNAH', 'Yacine', 'yacine@gmail.com', '17-07-1999', 'Poissy', 'France', '78300', 11),
+    ->     (4, 'LE FEVRE', 'Tom', 'tom@gmail.com', '06-01-1994', 'Poissy', 'France', '78300', 12),
+    ->     (5, 'HYVERNAT', 'Hafsa', 'hafsa@gmail.com', '08-04-2002', 'Les Mureaux', 'France', '78130', 15),
+    ->     (6, 'MENDY', 'Kevin', 'kevin@gmail.com', '03-02-1991', 'Poissy', 'France', '78300', 8),
+    ->     (7, 'GIMBERT', 'Dominique', 'dominique@gmail.com', '16-01-1962', 'Saint Germain En Laye', 'France', '78100', 5),
+    ->     (8, 'DANCIU', 'Delia', 'delia@gmail.com', '01-02-1994', 'Poissy', 'France', '78300', 12),
+    ->     (9, 'AWEL', 'Yadaf', 'yadaf@gmail.com', '04-05-1998', 'Paris', 'France', '78300', 9),
+    ->     (10, 'HAVRET', 'Henri', 'henri@gmail.com', '07-10-1991', 'Versailles', 'France', '78000', 10),
+    ->     (11, 'OURAHOU', 'Shaymae', 'shaymae@gmail.com', '09-01-2002', 'Les Mureaux', 'France', '78130', 11);
+ERROR 1062 (23000): Duplicate entry '1' for key 'PRIMARY'
+MariaDB [poles]> INSERT INTO employes (id, nom, prenom, email, date_naissance, ville, pays, code_postal, note)
+    ->     VALUES(1,'BOUBEKEUR', 'Nacime', 'nacime@gmail.com', '23-10-1999', 'Poissy', 'France', '78300', 18),
+    ->     (2, 'KONE', 'Nouha', 'kone@gmail.com', '19-06-2002', 'Mantes-la-jolie', 'France', '78200', 14),
+    ->     (3, 'MOUNAH', 'Yacine', 'yacine@gmail.com', '17-07-1999', 'Poissy', 'France', '78300', 11),
+    ->     (4, 'LE FEVRE', 'Tom', 'tom@gmail.com', '06-01-1994', 'Poissy', 'France', '78300', 12),
+    ->     (5, 'HYVERNAT', 'Hafsa', 'hafsa@gmail.com', '08-04-2002', 'Les Mureaux', 'France', '78130', 15),
+    ->     (6, 'MENDY', 'Kevin', 'kevin@gmail.com', '03-02-1991', 'Poissy', 'France', '78300', 8),
+    ->     (7, 'GIMBERT', 'Dominique', 'dominique@gmail.com', '16-01-1962', 'Saint Germain En Laye', 'France', '78100', 5),
+    ->     (8, 'DANCIU', 'Delia', 'delia@gmail.com', '01-02-1994', 'Poissy', 'France', '78300', 12),
+    ->     (9, 'AWEL', 'Yadaf', 'yadaf@gmail.com', '04-05-1998', 'Paris', 'France', '78300', 9),
+    ->     (10, 'HAVRET', 'Henri', 'henri@gmail.com', '07-10-1991', 'Versailles', 'France', '78000', 10),
+    ->     (11, 'OURAHOU', 'Shaymae', 'shaymae@gmail.com', '09-01-2002', 'Les Mureaux', 'France', '78130', 11);
+Query OK, 11 rows affected, 11 warnings (0.002 sec)
+Records: 11  Duplicates: 0  Warnings: 11
+
+MariaDB [poles]> INSERT INTO employes (id, nom, prenom, email, date_naissance, ville, pays, code_postal, note)
+    ->     (12, 'OURAHOU', 'Shaymae', 'shaymae@gmail.com', '2000-10-23', 'Les Mureaux', 'France', '78130', 11);
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '12, 'OURAHOU', 'Shaymae', 'shaymae@gmail.com', '2000-10-23', 'Les Mureaux', '...' at line 2
+MariaDB [poles]> INSERT INTO employes (id, nom, prenom, email, date_naissance, ville, pays, code_postal, note)
+    ->     (12, 'OURAHOU', 'Shaymae', 'shaymae@gmail.com', 2000-10-23, 'Les Mureaux', 'France', '78130', 11);
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '12, 'OURAHOU', 'Shaymae', 'shaymae@gmail.com', 2000-10-23, 'Les Mureaux', 'Fr...' at line 2
+MariaDB [poles]> INSERT INTO employes (id, nom, prenom, email, date_naissance, ville, pays, code_postal, note)
+    ->     (12, 'OURAHOU', 'Shaymae', 'shaymae@gmail.com', 2000-23-10, 'Les Mureaux', 'France', '78130', 11);
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '12, 'OURAHOU', 'Shaymae', 'shaymae@gmail.com', 2000-23-10, 'Les Mureaux', 'Fr...' at line 2
+MariaDB [poles]>     (12, 'OURAHOU', 'Shaymae', 'shaymae@gmail.com', '2000-23-10', 'Les Mureaux', 'France', '78130', 11);
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '12, 'OURAHOU', 'Shaymae', 'shaymae@gmail.com', '2000-23-10', 'Les Mureaux', '...' at line 1
+MariaDB [poles]> CREATE TABLE employes(
+    ->    id INT(3) PRIMARY KEY NOT NULL,
+    ->    nom VARCHAR(30),
+    ->    prenom VARCHAR(255),
+    ->    email VARCHAR(255),
+    ->    date_naissance DATE,
+    ->    ville VARCHAR(255),
+    ->    pays VARCHAR(255),
+    ->    code_postal VARCHAR(5),
+    ->    note INT(2)
+    -> );
+Query OK, 0 rows affected (0.022 sec)
+
+MariaDB [poles]> INSERT INTO employes (id, nom, prenom, email, date_naissance, ville, pays, code_postal, note)
+    ->     (12, 'OURAHOU', 'Shaymae', 'shaymae@gmail.com', 20001023, 'Les Mureaux', 'France', '78130', 11);
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '12, 'OURAHOU', 'Shaymae', 'shaymae@gmail.com', 20001023, 'Les Mureaux', 'Fran...' at line 2
+MariaDB [poles]> INSERT INTO employes (id, nom, prenom, email, date_naissance, ville, pays, code_postal, note)
+    ->     (12, 'OURAHOU', 'Shaymae', 'shaymae@gmail.com', '20001023', 'Les Mureaux', 'France', '78130', 11);
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '12, 'OURAHOU', 'Shaymae', 'shaymae@gmail.com', '20001023', 'Les Mureaux', 'Fr...' at line 2
+MariaDB [poles]> INSERT INTO employes (id, nom, prenom, email, date_naissance, ville, pays, code_postal, note)
+    ->     (12, 'OURAHOU', 'Shaymae', 'shaymae@gmail.com', '2000-10-23', 'Les Mureaux', 'France', '78130', 11);
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '12, 'OURAHOU', 'Shaymae', 'shaymae@gmail.com', '2000-10-23', 'Les Mureaux', '...' at line 2
+MariaDB [poles]> INSERT INTO employes (id, nom, prenom, email, date_naissance, ville, pays, code_postal, note)
+    ->     (1, 'OURAHOU', 'Shaymae', 'shaymae@gmail.com', 2000-10-23, 'Les Mureaux', 'France', '78130', 11);
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '1, 'OURAHOU', 'Shaymae', 'shaymae@gmail.com', 2000-10-23, 'Les Mureaux', 'Fra...' at line 2
+MariaDB [poles]> CREATE TABLE `employes`(
+    ->    id INT(3) PRIMARY KEY NOT NULL,
+    ->    nom VARCHAR(30),
+    ->    prenom VARCHAR(255),
+    ->    email VARCHAR(255),
+    ->    date_naissance DATE,
+    ->    ville VARCHAR(255),
+    ->    pays VARCHAR(255),
+    ->    code_postal VARCHAR(5),
+    ->    note INT(2)
+    ->    );
+Query OK, 0 rows affected (0.030 sec)
+
+MariaDB [poles]>     (1, 'OURAHOU', 'Shaymae', 'shaymae@gmail.com', 2000-10-23, 'Les Mureaux', 'France', '78130', 11);
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '1, 'OURAHOU', 'Shaymae', 'shaymae@gmail.com', 2000-10-23, 'Les Mureaux', 'Fra...' at line 1
+MariaDB [poles]>     (1, 'OURAHOU', 'Shaymae', 'shaymae@gmail.com', '2000-10-23', 'Les Mureaux', 'France', '78130', 11);
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '1, 'OURAHOU', 'Shaymae', 'shaymae@gmail.com', '2000-10-23', 'Les Mureaux', 'F...' at line 1
+MariaDB [poles]> CREATE TABLE employes(
+    ->    id INT(3) PRIMARY KEY NOT NULL,
+    ->    nom VARCHAR(30),
+    ->    prenom VARCHAR(255),
+    ->    email VARCHAR(255),
+    ->    date_naissance DATE,
+    ->    ville VARCHAR(255),
+    ->    pays VARCHAR(255),
+    ->    code_postal VARCHAR(5),
+    ->    note INT(2)
+    ->    );
+Query OK, 0 rows affected (0.020 sec)
+
+MariaDB [poles]> CREATE TABLE employes(
+    ->    id INT(3) PRIMARY KEY NOT NULL,
+    ->    nom VARCHAR(30),
+    ->    prenom VARCHAR(255),
+    ->    email VARCHAR(255),
+    ->    date_naissance VARCHAR(255),
+    ->    ville VARCHAR(255),
+    ->    pays VARCHAR(255),
+    ->    code_postal VARCHAR(5),
+    ->    note INT(2)
+    ->    );
+Query OK, 0 rows affected (0.024 sec)
+
+MariaDB [poles]> INSERT INTO employes (id, nom, prenom, email, date_naissance, ville, pays, code_postal, note)
+    ->     VALUES(1,'BOUBEKEUR', 'Nacime', 'nacime@gmail.com', '23-10-1999', 'Poissy', 'France', '78300', 18),
+    ->     (2, 'KONE', 'Nouha', 'kone@gmail.com', '19-06-2002', 'Mantes-la-jolie', 'France', '78200', 14),
+    ->     (3, 'MOUNAH', 'Yacine', 'yacine@gmail.com', '17-07-1999', 'Poissy', 'France', '78300', 11),
+    ->     (4, 'LE FEVRE', 'Tom', 'tom@gmail.com', '06-01-1994', 'Poissy', 'France', '78300', 12),
+    ->     (5, 'HYVERNAT', 'Hafsa', 'hafsa@gmail.com', '08-04-2002', 'Les Mureaux', 'France', '78130', 15),
+    ->     (6, 'MENDY', 'Kevin', 'kevin@gmail.com', '03-02-1991', 'Poissy', 'France', '78300', 8),
+    ->     (7, 'GIMBERT', 'Dominique', 'dominique@gmail.com', '16-01-1962', 'Saint Germain En Laye', 'France', '78100', 5),
+    ->     (8, 'DANCIU', 'Delia', 'delia@gmail.com', '01-02-1994', 'Poissy', 'France', '78300', 12),
+    ->     (9, 'AWEL', 'Yadaf', 'yadaf@gmail.com', '04-05-1998', 'Paris', 'France', '78300', 9),
+    ->     (10, 'HAVRET', 'Henri', 'henri@gmail.com', '07-10-1991', 'Versailles', 'France', '78000', 10),
+    ->     (11, 'OURAHOU', 'Shaymae', 'shaymae@gmail.com', '09-01-2002', 'Les Mureaux', 'France', '78130', 11);
+Query OK, 11 rows affected (0.003 sec)
+Records: 11  Duplicates: 0  Warnings: 0
+
+MariaDB [poles]> SELECT * FROM employes WHERE id = 4;
++----+----------+--------+---------------+----------------+--------+--------+-------------+------+
+| id | nom      | prenom | email         | date_naissance | ville  | pays   | code_postal | note |
++----+----------+--------+---------------+----------------+--------+--------+-------------+------+
+|  4 | LE FEVRE | Tom    | tom@gmail.com | 06-01-1994     | Poissy | France | 78300       |   12 |
++----+----------+--------+---------------+----------------+--------+--------+-------------+------+
+1 row in set (0.000 sec)
+
+MariaDB [poles]> SELECT * FROM employes WHERE ville = 'Poissy':
+    -> Ctrl-C -- exit!
+Bye
+
+C:\xampp\mysql\bin>mysql -u root --
+Welcome to the MariaDB monitor.  Commands end with ; or \g.
+Your MariaDB connection id is 233
+Server version: 10.4.24-MariaDB mariadb.org binary distribution
+
+Copyright (c) 2000, 2018, Oracle, MariaDB Corporation Ab and others.
+
+Type 'help;' or '\h' for help. Type '\c' to clear the current input statement.
+
+MariaDB [(none)]> SELECT * FROM employes WHERE ville = 'Poissy';
+ERROR 1046 (3D000): No database selected
+MariaDB [(none)]> use poles;
+Database changed
+MariaDB [poles]> SELECT * FROM employes WHERE ville = 'Poissy';
++----+-----------+--------+------------------+----------------+--------+--------+-------------+------+
+| id | nom       | prenom | email            | date_naissance | ville  | pays   | code_postal | note |
++----+-----------+--------+------------------+----------------+--------+--------+-------------+------+
+|  1 | BOUBEKEUR | Nacime | nacime@gmail.com | 23-10-1999     | Poissy | France | 78300       |   18 |
+|  3 | MOUNAH    | Yacine | yacine@gmail.com | 17-07-1999     | Poissy | France | 78300       |   11 |
+|  4 | LE FEVRE  | Tom    | tom@gmail.com    | 06-01-1994     | Poissy | France | 78300       |   12 |
+|  6 | MENDY     | Kevin  | kevin@gmail.com  | 03-02-1991     | Poissy | France | 78300       |    8 |
+|  8 | DANCIU    | Delia  | delia@gmail.com  | 01-02-1994     | Poissy | France | 78300       |   12 |
++----+-----------+--------+------------------+----------------+--------+--------+-------------+------+
+5 rows in set (0.000 sec)
+
+MariaDB [poles]> SELECT * FROM employes WHERE note = '1%';
+Empty set, 1 warning (0.003 sec)
+
+MariaDB [poles]> SELECT * FROM employes WHERE note = 1%;
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 1
+MariaDB [poles]> SELECT * FROM employes WHERE note > 10;
++----+-----------+---------+-------------------+----------------+-----------------+--------+-------------+------+
+| id | nom       | prenom  | email             | date_naissance | ville           | pays   | code_postal | note |
++----+-----------+---------+-------------------+----------------+-----------------+--------+-------------+------+
+|  1 | BOUBEKEUR | Nacime  | nacime@gmail.com  | 23-10-1999     | Poissy          | France | 78300       |   18 |
+|  2 | KONE      | Nouha   | kone@gmail.com    | 19-06-2002     | Mantes-la-jolie | France | 78200       |   14 |
+|  3 | MOUNAH    | Yacine  | yacine@gmail.com  | 17-07-1999     | Poissy          | France | 78300       |   11 |
+|  4 | LE FEVRE  | Tom     | tom@gmail.com     | 06-01-1994     | Poissy          | France | 78300       |   12 |
+|  5 | HYVERNAT  | Hafsa   | hafsa@gmail.com   | 08-04-2002     | Les Mureaux     | France | 78130       |   15 |
+|  8 | DANCIU    | Delia   | delia@gmail.com   | 01-02-1994     | Poissy          | France | 78300       |   12 |
+| 11 | OURAHOU   | Shaymae | shaymae@gmail.com | 09-01-2002     | Les Mureaux     | France | 78130       |   11 |
++----+-----------+---------+-------------------+----------------+-----------------+--------+-------------+------+
+7 rows in set (0.000 sec)
+
+MariaDB [poles]> SELECT * FROM employes WHERE email = 'n%';
+Empty set (0.000 sec)
+
+MariaDB [poles]> SELECT * FROM employes WHERE ville = 'Les mureaux';
++----+----------+---------+-------------------+----------------+-------------+--------+-------------+------+
+| id | nom      | prenom  | email             | date_naissance | ville       | pays   | code_postal | note |
++----+----------+---------+-------------------+----------------+-------------+--------+-------------+------+
+|  5 | HYVERNAT | Hafsa   | hafsa@gmail.com   | 08-04-2002     | Les Mureaux | France | 78130       |   15 |
+| 11 | OURAHOU  | Shaymae | shaymae@gmail.com | 09-01-2002     | Les Mureaux | France | 78130       |   11 |
++----+----------+---------+-------------------+----------------+-------------+--------+-------------+------+
+2 rows in set (0.000 sec)
+
+MariaDB [poles]> SELECT * FROM employes WHERE ville LIKE 'P%';
++----+-----------+--------+------------------+----------------+--------+--------+-------------+------+
+| id | nom       | prenom | email            | date_naissance | ville  | pays   | code_postal | note |
++----+-----------+--------+------------------+----------------+--------+--------+-------------+------+
+|  1 | BOUBEKEUR | Nacime | nacime@gmail.com | 23-10-1999     | Poissy | France | 78300       |   18 |
+|  3 | MOUNAH    | Yacine | yacine@gmail.com | 17-07-1999     | Poissy | France | 78300       |   11 |
+|  4 | LE FEVRE  | Tom    | tom@gmail.com    | 06-01-1994     | Poissy | France | 78300       |   12 |
+|  6 | MENDY     | Kevin  | kevin@gmail.com  | 03-02-1991     | Poissy | France | 78300       |    8 |
+|  8 | DANCIU    | Delia  | delia@gmail.com  | 01-02-1994     | Poissy | France | 78300       |   12 |
+|  9 | AWEL      | Yadaf  | yadaf@gmail.com  | 04-05-1998     | Paris  | France | 78300       |    9 |
++----+-----------+--------+------------------+----------------+--------+--------+-------------+------+
+6 rows in set (0.000 sec)
+
+MariaDB [poles]> SELECT * FROM employes WHERE date_naissance LIKE < '%2000';
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '< '%2000'' at line 1
+MariaDB [poles]> SELECT * FROM employes WHERE date_naissance LIKE '2000';
+Empty set (0.001 sec)
+
+MariaDB [poles]> SELECT * FROM employes WHERE date_naissance < '%2000';
+Empty set (0.001 sec)
+
+MariaDB [poles]> SELECT * FROM employes WHERE date_naissance < LIKE  '%2000';
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'LIKE  '%2000'' at line 1
+MariaDB [poles]> SELECT * FROM employes WHERE date_naissance < '01-01-2000';
+Empty set (0.000 sec)
+
+MariaDB [poles]> SELECT * FROM employes WHERE date_naissance < 01-01-2000;
+Empty set, 11 warnings (0.001 sec)
+
+MariaDB [poles]> SELECT * FROM employes WHERE date_naissance LIKE '%2000';
+Empty set (0.000 sec)
+
+MariaDB [poles]> SELECT * FROM employes WHERE date_naissance LIKE '%2002';
++----+----------+---------+-------------------+----------------+-----------------+--------+-------------+------+
+| id | nom      | prenom  | email             | date_naissance | ville           | pays   | code_postal | note |
++----+----------+---------+-------------------+----------------+-----------------+--------+-------------+------+
+|  2 | KONE     | Nouha   | kone@gmail.com    | 19-06-2002     | Mantes-la-jolie | France | 78200       |   14 |
+|  5 | HYVERNAT | Hafsa   | hafsa@gmail.com   | 08-04-2002     | Les Mureaux     | France | 78130       |   15 |
+| 11 | OURAHOU  | Shaymae | shaymae@gmail.com | 09-01-2002     | Les Mureaux     | France | 78130       |   11 |
++----+----------+---------+-------------------+----------------+-----------------+--------+-------------+------+
+3 rows in set (0.000 sec)
+
+MariaDB [poles]> SELECT * FROM employes WHERE date_naissance LIKE '%2002';
++----+----------+---------+-------------------+----------------+-----------------+--------+-------------+------+
+| id | nom      | prenom  | email             | date_naissance | ville           | pays   | code_postal | note |
++----+----------+---------+-------------------+----------------+-----------------+--------+-------------+------+
+|  2 | KONE     | Nouha   | kone@gmail.com    | 19-06-2002     | Mantes-la-jolie | France | 78200       |   14 |
+|  5 | HYVERNAT | Hafsa   | hafsa@gmail.com   | 08-04-2002     | Les Mureaux     | France | 78130       |   15 |
+| 11 | OURAHOU  | Shaymae | shaymae@gmail.com | 09-01-2002     | Les Mureaux     | France | 78130       |   11 |
++----+----------+---------+-------------------+----------------+-----------------+--------+-------------+------+
+3 rows in set (0.000 sec)
+
+MariaDB [poles]> show databases;
++--------------------+
+| Database           |
++--------------------+
+| fourniture         |
+| information_schema |
+| mysql              |
+| nacime             |
+| performance_schema |
+| phpmyadmin         |
+| poles              |
+| portfolio          |
+| sitewordpress      |
+| sitewordpress2     |
+| test               |
++--------------------+
+11 rows in set (0.001 sec)
+
+MariaDB [poles]> desc poles;
+ERROR 1146 (42S02): Table 'poles.poles' doesn't exist
+MariaDB [poles]> SELECT * FROM employes;
++----+-----------+-----------+---------------------+----------------+-----------------------+--------+-------------+------+
+| id | nom       | prenom    | email               | date_naissance | ville                 | pays   | code_postal | note |
++----+-----------+-----------+---------------------+----------------+-----------------------+--------+-------------+------+
+|  1 | BOUBEKEUR | Nacime    | nacime@gmail.com    | 23-10-1999     | Poissy                | France | 78300       |   18 |
+|  2 | KONE      | Nouha     | kone@gmail.com      | 19-06-2002     | Mantes-la-jolie       | France | 78200       |   14 |
+|  3 | MOUNAH    | Yacine    | yacine@gmail.com    | 17-07-1999     | Poissy                | France | 78300       |   11 |
+|  4 | LE FEVRE  | Tom       | tom@gmail.com       | 06-01-1994     | Poissy                | France | 78300       |   12 |
+|  5 | HYVERNAT  | Hafsa     | hafsa@gmail.com     | 08-04-2002     | Les Mureaux           | France | 78130       |   15 |
+|  6 | MENDY     | Kevin     | kevin@gmail.com     | 03-02-1991     | Poissy                | France | 78300       |    8 |
+|  7 | GIMBERT   | Dominique | dominique@gmail.com | 16-01-1962     | Saint Germain En Laye | France | 78100       |    5 |
+|  8 | DANCIU    | Delia     | delia@gmail.com     | 01-02-1994     | Poissy                | France | 78300       |   12 |
+|  9 | AWEL      | Yadaf     | yadaf@gmail.com     | 04-05-1998     | Paris                 | France | 78300       |    9 |
+| 10 | HAVRET    | Henri     | henri@gmail.com     | 07-10-1991     | Versailles            | France | 78000       |   10 |
+| 11 | OURAHOU   | Shaymae   | shaymae@gmail.com   | 09-01-2002     | Les Mureaux           | France | 78130       |   11 |
++----+-----------+-----------+---------------------+----------------+-----------------------+--------+-------------+------+
+11 rows in set (0.000 sec)
+
+MariaDB [poles]> SELECT * FROM employes WHERE 10 < note < 20;
++----+-----------+-----------+---------------------+----------------+-----------------------+--------+-------------+------+
+| id | nom       | prenom    | email               | date_naissance | ville                 | pays   | code_postal | note |
++----+-----------+-----------+---------------------+----------------+-----------------------+--------+-------------+------+
+|  1 | BOUBEKEUR | Nacime    | nacime@gmail.com    | 23-10-1999     | Poissy                | France | 78300       |   18 |
+|  2 | KONE      | Nouha     | kone@gmail.com      | 19-06-2002     | Mantes-la-jolie       | France | 78200       |   14 |
+|  3 | MOUNAH    | Yacine    | yacine@gmail.com    | 17-07-1999     | Poissy                | France | 78300       |   11 |
+|  4 | LE FEVRE  | Tom       | tom@gmail.com       | 06-01-1994     | Poissy                | France | 78300       |   12 |
+|  5 | HYVERNAT  | Hafsa     | hafsa@gmail.com     | 08-04-2002     | Les Mureaux           | France | 78130       |   15 |
+|  6 | MENDY     | Kevin     | kevin@gmail.com     | 03-02-1991     | Poissy                | France | 78300       |    8 |
+|  7 | GIMBERT   | Dominique | dominique@gmail.com | 16-01-1962     | Saint Germain En Laye | France | 78100       |    5 |
+|  8 | DANCIU    | Delia     | delia@gmail.com     | 01-02-1994     | Poissy                | France | 78300       |   12 |
+|  9 | AWEL      | Yadaf     | yadaf@gmail.com     | 04-05-1998     | Paris                 | France | 78300       |    9 |
+| 10 | HAVRET    | Henri     | henri@gmail.com     | 07-10-1991     | Versailles            | France | 78000       |   10 |
+| 11 | OURAHOU   | Shaymae   | shaymae@gmail.com   | 09-01-2002     | Les Mureaux           | France | 78130       |   11 |
++----+-----------+-----------+---------------------+----------------+-----------------------+--------+-------------+------+
+11 rows in set (0.000 sec)
+
+MariaDB [poles]> SELECT * FROM employes WHERE note < 10 & note > 5;
+Empty set (0.000 sec)
+
+MariaDB [poles]> SELECT * FROM employes WHERE note < 10 && note > 5;
++----+-------+--------+-----------------+----------------+--------+--------+-------------+------+
+| id | nom   | prenom | email           | date_naissance | ville  | pays   | code_postal | note |
++----+-------+--------+-----------------+----------------+--------+--------+-------------+------+
+|  6 | MENDY | Kevin  | kevin@gmail.com | 03-02-1991     | Poissy | France | 78300       |    8 |
+|  9 | AWEL  | Yadaf  | yadaf@gmail.com | 04-05-1998     | Paris  | France | 78300       |    9 |
++----+-------+--------+-----------------+----------------+--------+--------+-------------+------+
+2 rows in set (0.000 sec)
+
+MariaDB [poles]> create database entreprise;
+Query OK, 1 row affected (0.001 sec)
+
+MariaDB [poles]> use entreprise;
+Database changed
+MariaDB [entreprise]> use poles;
+Database changed
+MariaDB [poles]> use entreprise;
+Database changed
+MariaDB [entreprise]> INSERT INTO employes (id, nom, prenom, email, date_naissance, ville, pays, code_postal, note)
+    ->     VALUES(1,'BOUBEKEUR', 'Nacime', 'nacime@gmail.com', '23-10-1999', 'Poissy', 'France', '78300', 18),
+    ->     (2, 'KONE', 'Nouha', 'kone@gmail.com', '19-06-2002', 'Mantes-la-jolie', 'France', '78200', 14),
+    ->     (3, 'MOUNAH', 'Yacine', 'yacine@gmail.com', '17-07-1999', 'Poissy', 'France', '78300', 11),
+    ->     (4, 'LE FEVRE', 'Tom', 'tom@gmail.com', '06-01-1994', 'Poissy', 'France', '78300', 12),
+    ->     (5, 'HYVERNAT', 'Hafsa', 'hafsa@gmail.com', '08-04-2002', 'Les Mureaux', 'France', '78130', 15),
+    ->     (6, 'MENDY', 'Kevin', 'kevin@gmail.com', '03-02-1991', 'Poissy', 'France', '78300', 8),
+    ->     (7, 'GIMBERT', 'Dominique', 'dominique@gmail.com', '16-01-1962', 'Saint Germain En Laye', 'France', '78100', 5),
+    ->     (8, 'DANCIU', 'Delia', 'delia@gmail.com', '01-02-1994', 'Poissy', 'France', '78300', 12),
+    ->     (9, 'AWEL', 'Yadaf', 'yadaf@gmail.com', '04-05-1998', 'Paris', 'France', '78300', 9),
+    ->     (10, 'HAVRET', 'Henri', 'henri@gmail.com', '07-10-1991', 'Versailles', 'France', '78000', 10),
+    ->     (11, 'OURAHOU', 'Shaymae', 'shaymae@gmaCtrl-C -- exit!
+Bye
+
+C:\xampp\mysql\bin>mysql -u root --
+Welcome to the MariaDB monitor.  Commands end with ; or \g.
+Your MariaDB connection id is 240
+Server version: 10.4.24-MariaDB mariadb.org binary distribution
+
+Copyright (c) 2000, 2018, Oracle, MariaDB Corporation Ab and others.
+
+Type 'help;' or '\h' for help. Type '\c' to clear the current input statement.
+
+MariaDB [(none)]> use entreprise;
+Database changed
+MariaDB [entreprise]> CREATE TABLE IF NOT EXISTS employes (
+    -> id_abonne int(3) NOT NULL AUTO_INCREMENT,
+    -> prenom varchar(20) DEFAULT NULL,
+    -> nom varchar(20) DEFAULT NULL,
+    -> sex enum('M', 'F')NOT NULL,
+    -> PRIMARY KEY(id_abonne)
+    -> );
+Query OK, 0 rows affected (0.027 sec)
+
+MariaDB [entreprise]> show tables;
++----------------------+
+| Tables_in_entreprise |
++----------------------+
+| employes             |
++----------------------+
+1 row in set (0.001 sec)
+
+MariaDB [entreprise]> select * from tables_in_entreprise;
+ERROR 1146 (42S02): Table 'entreprise.tables_in_entreprise' doesn't exist
+MariaDB [entreprise]> select * from entreprise;
+ERROR 1146 (42S02): Table 'entreprise.entreprise' doesn't exist
+MariaDB [entreprise]> SELECT * FROM employes;
+Empty set (0.003 sec)
+
+MariaDB [entreprise]> CREATE TABLE IF NOT EXISTS abonnes (
+    -> id_abonne int(3) NOT NULL AUTO_INCREMENT,
+    -> prenom varchar(20) DEFAULT NULL,
+    -> nom varchar(20) DEFAULT NULL,
+    -> sex enum('M', 'F')NOT NULL,
+    -> PRIMARY KEY(id_abonne)
+    -> );
+Query OK, 0 rows affected (0.024 sec)
+
+MariaDB [entreprise]> CREATE TABLE IF NOT EXISTS employes (
+    -> id_employes int(3) NOT NULL AUTO_INCREMENT,
+    -> prenom varchar(20) DEFAULT NULL,
+    -> nom varchar(20) DEFAULT NULL,
+    -> sex enum('M', 'F') NOT NULL,
+    -> service varchar(30) DEFAULT NULL,
+    -> date_embauche date DEFAULT NULL,
+    -> salaire float DEFAULT NULL,
+    -> PRIMARY KEY(id_employes)
+    -> );
+Query OK, 0 rows affected (0.020 sec)
+
+MariaDB [entreprise]> INSERT INTO employes (id_employes, prenom, nom, sex, service, date_embauche, salaire)
+    -> VALUES
+    -> (350, 'Jean-Pierre', 'Laborde', 'M', 'Direction', '1999-12-09', 5000),
+    -> (388, 'Clément', 'Gallet', 'M', 'Commercial', '2000-01-15', 2300),
+    -> (415, 'Thomas', 'Winter', 'M', 'Commercial', '2001-01-15', 3350),
+    -> (417, 'Cloe', 'Dubar', 'F', 'Production', '2001-09-05', 1900),
+    -> (491, 'Elodie', 'Fellier', 'F', 'Secretariat', '2002-02-15', 1700),
+    -> (509, 'Celine', 'Perrin', 'F', 'Commercial', '2006-09-10', 2700),
+    -> (690, 'Mathieu', 'Vergnal', 'M', 'Informatique', '2008-11-17', 2500),
+    -> (739, 'Tom', 'Le Fevre', 'M', 'Informatique', '2022-05-09', 2600),
+    -> (900, 'Delia', 'Danciu', 'F', 'Production', '2018-01-15', 8000),
+    -> (990, 'Nouha', 'Kone', 'M', 'Informatique', '2000-01-15', 3000)
+    -> );
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ')' at line 13
+MariaDB [entreprise]> INSERT INTO employes (id_employes, prenom, nom, sex, service, date_embauche, salaire)
+    -> VALUES (
+    -> (350, 'Jean-Pierre', 'Laborde', 'M', 'Direction', '1999-12-09', 5000),
+    -> (388, 'Clément', 'Gallet', 'M', 'Commercial', '2000-01-15', 2300),
+    -> (415, 'Thomas', 'Winter', 'M', 'Commercial', '2001-01-15', 3350),
+    -> (417, 'Cloe', 'Dubar', 'F', 'Production', '2001-09-05', 1900),
+    -> (491, 'Elodie', 'Fellier', 'F', 'Secretariat', '2002-02-15', 1700),
+    -> (509, 'Celine', 'Perrin', 'F', 'Commercial', '2006-09-10', 2700),
+    -> (690, 'Mathieu', 'Vergnal', 'M', 'Informatique', '2008-11-17', 2500),
+    -> (739, 'Tom', 'Le Fevre', 'M', 'Informatique', '2022-05-09', 2600),
+    -> (900, 'Delia', 'Danciu', 'F', 'Production', '2018-01-15', 8000),
+    -> (990, 'Nouha', 'Kone', 'M', 'Informatique', '2000-01-15', 3000)
+    -> );
+ERROR 1241 (21000): Operand should contain 1 column(s)
+MariaDB [entreprise]>
+MariaDB [entreprise]> INSERT INTO employes (id_employes, prenom, nom, sex, service, date_embauche, salaire)
+    -> VALUES
+    -> (350, 'Jean-Pierre', 'Laborde', 'M', 'Direction', '1999-12-09', 5000),
+    -> (388, 'Clément', 'Gallet', 'M', 'Commercial', '2000-01-15', 2300),
+    -> (415, 'Thomas', 'Winter', 'M', 'Commercial', '2001-01-15', 3350),
+    -> (417, 'Cloe', 'Dubar', 'F', 'Production', '2001-09-05', 1900),
+    -> (491, 'Elodie', 'Fellier', 'F', 'Secretariat', '2002-02-15', 1700),
+    -> (509, 'Celine', 'Perrin', 'F', 'Commercial', '2006-09-10', 2700),
+    -> (690, 'Mathieu', 'Vergnal', 'M', 'Informatique', '2008-11-17', 2500),
+    -> (739, 'Tom', 'Le Fevre', 'M', 'Informatique', '2022-05-09', 2600),
+    -> (900, 'Delia', 'Danciu', 'F', 'Production', '2018-01-15', 8000),
+    -> (990, 'Nouha', 'Kone', 'M', 'Informatique', '2000-01-15', 3000);
+Query OK, 10 rows affected (0.004 sec)
+Records: 10  Duplicates: 0  Warnings: 0
+
+MariaDB [entreprise]>
